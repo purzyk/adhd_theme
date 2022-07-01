@@ -1,0 +1,24 @@
+{{#> layouts/base title="Front-end PA | Home"}}
+  {{#*inline "head-block"}}
+    <style>
+      .this-is-how-you-use-internal-styling {
+        background: pink;
+      }
+    </style>
+  {{/inline}}
+  
+    
+
+  {{#*inline "content-block"}}
+  
+      {{> ./includes/widgets/posts}}
+      {{> ./includes/widgets/form}}
+      {{> ./includes/widgets/kitchen-sink}}
+  {{/inline}}
+
+  {{#*inline "scripts-block"}}
+    <script>
+      console.log('This is how you load page specific scripts!');
+    </script>
+  {{/inline}}
+{{/layouts/base}}
